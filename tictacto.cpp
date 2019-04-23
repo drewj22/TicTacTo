@@ -19,8 +19,8 @@ int main()
 		board();
 		player=(player%2)?1:2;
 
-        cout << "3 in a Row Wins!" << endl << endl;
-		cout << "Player " << player << ", enter a number:  ";
+        cout << "Get 3 in a row to win!" << endl << endl;
+		cout << "Player " << player << ", enter the number of the spot you would like to take:  ";
 		cin >> choice;
 
 		mark=(player == 1) ? 'O' : 'X';
@@ -54,7 +54,7 @@ int main()
 			square[9] = mark;
 		else
 		{
-			cout<<"Invalid move ";
+			cout<<"Move not valid ";
 
 			player--;
 			cin.ignore();
